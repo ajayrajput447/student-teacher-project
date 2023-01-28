@@ -148,9 +148,13 @@ header {
 
 
   /* teacher body */
-
-
 .teacher-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left-body , .right-body{
     display: flex;
     flex-direction: column;
     font-family: "Raleway";
@@ -162,6 +166,7 @@ header {
 
 .schedule-form {
     max-width: 500px;
+    height: 70vh;
     margin: 0.5rem auto;
     border: 2px solid black;
     padding: 2rem;
@@ -185,6 +190,7 @@ header {
 .manage-appo {
     max-width: 500px;
     width: 500px;
+    height: 200px;
     margin: 0.5rem auto;
     border: 2px solid black;
     padding: 2rem;
@@ -193,19 +199,18 @@ header {
 
 .view-message {
     max-width: 500px;
+    height: 200px;
     width: 500px;
     margin: 0.5rem auto;
     border: 2px solid black;
     padding: 2rem;
     border-radius: 5px;
 }
-.view-message h3 {
-    
-}
 
 .view-appo {
     max-width: 500px;
     width: 500px;
+    height: 200px;
     margin: 0.5rem auto;
     border: 2px solid black;
     padding: 2rem;
@@ -228,5 +233,121 @@ header {
 }
 
 #logoutBtn:hover {
+    background-color: rgb(78, 196, 31);
+}
+
+/* student-page */
+.student-body {
+    display: flex;
+    flex-direction: row;
+}
+.right-body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway";
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    align-items: center;
+}
+
+.left-body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway";
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    align-items: center;
+}
+
+.student-reg {
+    max-width: 500px;
+    height: 700px;
+    margin: 0.5rem auto;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.student-reg label {
+    display: block; 
+    padding: 20px;
+}
+.student-reg input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: "Raleway";
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.bookappo-form {
+    max-width: 500px;
+    margin: 0.5rem auto;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.bookappo-form label {
+     display: block; 
+    padding: 1px;
+}
+.bookappo-form input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: "Raleway";
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+.send-message {
+    max-width: 500px;
+    width: 500px;
+    height: 200px;
+    margin: 0.5rem auto;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.send-message label {
+    display: block; 
+    padding: 1px;
+}
+
+.send-message input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-family: "Raleway";
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+#stu-form-head {
+    
+    margin: 0.5rem 450px;
+    font-family: "Raleway";
+    text-decoration: none;
+    font-size: x-large;
+}
+
+#registerBtn {
+    border: 0;
+    background: rgb(22, 20, 20);
+    padding: 1rem;
+    color: white;
+    margin: 10rem 0;
+    width : 100%;
+    height: auto;
+    font-family: "Raleway";
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s background ease;
+}
+#registerBtn:hover {
     background-color: rgb(78, 196, 31);
 }
