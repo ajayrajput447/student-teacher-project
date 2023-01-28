@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./resources/Android_O_Preview_Logo.png" alt="">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./admin.html">Admin</a></li>
+                <li><a href="./teacher.html">Teacher</a></li>
+                <li><a href="./student.html">Student</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="admin-body">
+        
+        <div>
+            <h1 id="form-head">Add Teacher</h1>
+            <form class="add-teacher">
+                <label for="Name">Name</label><input type="text" id="name">
+                <label for="Department">Department</label><input type="text" id="department">
+                <label for="Subject">Subject</label><input type="text" id="subject">
+                <label for="e-mail">E-Mail</label><input type="email" id="email" >
+                <input type="submit" value="Submit" id="submitBtn">
+            </form>
+        </div>
+        <div id="update-teacher" ><button>Update/Delate Teacher</button></div>
+        <div id="approve" ><button>Approve Registration Student</button></div>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

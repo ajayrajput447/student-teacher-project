@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Teacher</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./resources/Android_O_Preview_Logo.png" alt="">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./admin.html">Admin</a></li>
+                <li><a href="./teacher.html">Teacher</a></li>
+                <li><a href="./student.html">Student</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="teacher-body">
+        <div class="schedule-appo">
+            <h3 id="form-head">Schedule Appointment</h3>
+            <form class="schedule-form">
+                <label for="date">Date</label><input type="date" id="date">
+                <label for="time">Time</label><input type="time" id="time">
+                <input type="submit" value="submit" id="submitBtn">
+            </form>
+        </div>
+        <div class="manage-appo">
+            <h3>Appointment Requests</h3>
+            Appontments requests from students to be shown here
+        </div>
+        <div class="view-message">
+            <h3>Messages</h3>
+            add a drop down menu to show messages
+        </div>
+        <div class="view-appo">
+            <h3>All Appontments</h3>
+            <div >show all appointments</div>
+        </div>
+    </div>
+    <div><button id="logoutBtn">Logout</button></div>
+    <script src="app.js"></script>
+</body>
+</html>
