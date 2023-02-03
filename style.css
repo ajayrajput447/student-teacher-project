@@ -1,16 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: rgb(1, 224, 143);
+}
+
+/* index */
+.index-body {
+    background-image: url(./resources/index\ background.png);
+    background-size:initial;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+
+.index-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.index-text-left {
+    font-family: "PT Mono";
+    padding-top: 20px;
+    padding-left: 230px;
+    font-size: 30px;
+}
+.index-text-right {
+    font-family: "PT Mono";
+    padding-top: 20px;
+    padding-left: 420px;
+    font-size: 30px;
+}
+/* header */
 
 li, a {
     font-family:"Oswald", sans-serif ;
     color: white;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
 }
 
@@ -19,7 +52,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
-    background-color: #24252A;
+    background-color: rgb(1, 56, 112);
     height: 80px;
 }
 
@@ -41,10 +74,10 @@ header {
 }
 
 .nav_links li a:hover {
-    color: rgb(78, 196, 31);
+    color: rgb(1, 224, 143);
 }
 .nav_links a:is(:link, :active, :visited).active {
-    color: rgb(78, 196, 31)
+    color:rgb(1, 224, 143);
 }
 
 /* admin page */
@@ -65,6 +98,12 @@ header {
     text-decoration: none;
     font-size: x-large;
 }
+input {
+    background-color: rgb(1, 224, 143);
+}
+input[type="text"] {
+    color: black;
+    }
 .add-teacher {
     max-width: 500px;
     margin: 0.5rem auto;
@@ -89,7 +128,7 @@ header {
 
 #submitBtn {
     border: 0;
-    background: rgb(22, 20, 20);
+    background: rgb(1, 56, 112);
     padding: 1rem;
     color: white;
     margin: 1rem 0;
@@ -101,7 +140,7 @@ header {
     transition: .3s background ease;
 }
 #submitBtn:hover {
-    background-color: rgb(78, 196, 31);
+    background-color: black;
 }
 
 #update-teacher {
@@ -112,7 +151,7 @@ header {
 }
 #update-teacher button {
     border: 0;
-    background: rgb(78, 196, 31);
+    background: rgb(1, 56, 112);
     color: white;
     height: 100px;
     width: 500px;
@@ -133,7 +172,7 @@ header {
 
 #approve button {
     border: 0;
-    background: rgb(78, 196, 31);
+    background: rgb(1, 56, 112);
     color: white;
     height: 100px;
     width: 500px;
@@ -219,7 +258,7 @@ header {
 
 #logoutBtn {
     border: 0;
-    background: rgb(22, 20, 20);
+    background: rgb(1, 56, 112);
     padding: 1rem;
     color: white;
     margin: 1rem 0;
@@ -233,7 +272,7 @@ header {
 }
 
 #logoutBtn:hover {
-    background-color: rgb(78, 196, 31);
+    background-color: black;
 }
 
 /* student-page */
@@ -247,7 +286,7 @@ header {
     font-family: "Raleway";
     text-decoration: none;
     color: black;
-    margin: 20px;
+    margin: 0px;
     align-items: center;
 }
 
@@ -257,7 +296,7 @@ header {
     font-family: "Raleway";
     text-decoration: none;
     color: black;
-    margin: 20px;
+    margin: 0px;
     align-items: center;
 }
 
@@ -337,7 +376,7 @@ header {
 
 #registerBtn {
     border: 0;
-    background: rgb(22, 20, 20);
+    background: rgb(1, 56, 112);
     padding: 1rem;
     color: white;
     margin: 10rem 0;
@@ -349,5 +388,5 @@ header {
     transition: .3s background ease;
 }
 #registerBtn:hover {
-    background-color: rgb(78, 196, 31);
+    background-color: black;
 }
