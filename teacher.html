@@ -24,10 +24,11 @@
         <div class="left-body">
             <div class="schedule-appo">
                 <h3 id="form-head">Schedule Appointment</h3>
-                <form class="schedule-form">
+                <form class="schedule-form" id="form1">
+                    <input type="text" name="name">
                     <label for="date">Date</label><input type="date" autocomplete="off" id="date">
                     <label for="time">Time</label><input type="time" autocomplete="off" id="time">
-                    <input type="submit" value="submit" id="submitBtn">
+                    <input type="submit" value="Submit" id="submitBtn" id="teacher-appo-submit">
                 </form>
             </div>
         </div>
@@ -43,7 +44,7 @@
             </div>
             <div class="view-appo">
                 <h3>All Appontments</h3>
-                <div >show all appointments</div>
+                <div id="result"></div>
             </div>
         </div>
     </div>
